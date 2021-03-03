@@ -20,7 +20,7 @@ Week 1. A puppy adoption sample app only jetpack compose whitout xml layout
 
 ## :camera_flash: Screenshots
 
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+<img src="/results/screenshot_1.jpg" width="260">&emsp;<img src="/results/screenshot_2.jpg" width="260">
 
 ## License
 
