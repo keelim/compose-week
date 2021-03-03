@@ -28,15 +28,12 @@ fun MainView() {
     val dogList = DogRepository.dogList
     val navController = rememberNavController()
 
-    NavHost(
-        navController,
-        startDestination = Navigation.HomeScreen.title
-    ) {
+    NavHost(navController, startDestination = Navigation.HomeScreen.title) {
         composable(Navigation.HomeScreen.title) {
             HomeView(
                 dogs = dogList,
-                navigateToDetails = { doggo ->
-                    navController.navigate(Navigation.DetailScreen.title + "/${doggo.id}")
+                navigateToDetails = { dog ->
+                    navController.navigate(Navigation.DetailScreen.title + "/${dog.id}")
                 }
             )
         }

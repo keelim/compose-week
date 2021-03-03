@@ -56,7 +56,7 @@ fun DetailsView(dog: Dog, navigateBack: () -> Unit) {
             Column(
                 modifier = Modifier.verticalScroll(rememberScrollState())
             ) {
-                Info(dog = dog)
+                Infomation(dog = dog)
                 Header(dog = dog)
             }
         }
@@ -78,7 +78,7 @@ private fun Header(dog: Dog) {
 }
 
 @Composable
-private fun Info(dog: Dog) {
+private fun Infomation(dog: Dog) {
     Column(modifier = Modifier.padding(10.dp)) {
         Row(
             modifier = Modifier

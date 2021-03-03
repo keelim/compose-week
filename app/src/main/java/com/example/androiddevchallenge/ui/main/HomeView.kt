@@ -52,10 +52,7 @@ fun HomeView(dogs: List<Dog>, navigateToDetails: (Dog) -> Unit) {
 }
 
 @Composable
-fun DoggoList(
-    dogList: List<Dog>,
-    navigateToDetails: (Dog) -> Unit
-) {
+fun DoggoList(dogList: List<Dog>, navigateToDetails: (Dog) -> Unit) {
     Column() {
         StaggeredVerticalGrid(
             maxColumnWidth = 300.dp,
@@ -75,9 +72,7 @@ private fun CreateGridItem(dog: Dog, navigateToDetails: (Dog) -> Unit) {
             .fillMaxWidth()
             .padding(5.dp)
             .clip(RoundedCornerShape(12.dp))
-            .clickable {
-                navigateToDetails.invoke(dog)
-            }
+            .clickable { navigateToDetails.invoke(dog) }
     ) {
         CoilImage(
             data = dog.image.url,
@@ -91,16 +86,12 @@ private fun CreateGridItem(dog: Dog, navigateToDetails: (Dog) -> Unit) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(
-                    pastelColors
-                        .random()
-                )
+                .background(pastelColors.random())
                 .padding(vertical = 10.dp, horizontal = 10.dp),
             verticalArrangement = Arrangement.SpaceEvenly
         ) {
             Row(
-                modifier = Modifier
-                    .fillMaxWidth(),
+                modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
