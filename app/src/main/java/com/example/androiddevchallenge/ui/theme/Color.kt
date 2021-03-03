@@ -25,13 +25,13 @@ val teal200 = Color(0xFF03DAC5)
 val purpleButtonLight = Color(0xFFDDD6F7)
 
 val pastelColors = listOf(
-    Color(0xFFFCD4D4),
-    Color(0xFFFC9CA4),
-    Color(0xFFFCD4C4),
-    Color(0xFFACDCAC),
-    Color(0xFFB4DCDC),
+    Color(0xFFE57373),
+    Color(0xFFF06292),
+    Color(0xFFBA68C8),
+    Color(0xFF7986CB),
+    Color(0xFF64B5F6),
     Color(0xFF7CD4D4),
-    Color(0xFFCC9494),
-    Color(0xFFA4D4B4),
-    Color(0xFFDB89B2),
+    Color(0xFF4FC3F7),
+    Color(0xFF4DD0E1),
+    Color(0xFF4DB6AC),
 )

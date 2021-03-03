@@ -20,12 +20,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigate
 import androidx.navigation.compose.rememberNavController
-import com.example.androiddevchallenge.data.DoggosRepository
+import com.example.androiddevchallenge.data.DogRepository
 import com.example.androiddevchallenge.navigation.Navigation
 
 @Composable
 fun MainView() {
-    val dogList = DoggosRepository.dogList
+    val dogList = DogRepository.dogList
     val navController = rememberNavController()
 
     NavHost(

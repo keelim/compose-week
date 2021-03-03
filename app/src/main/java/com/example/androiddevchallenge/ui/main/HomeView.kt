@@ -27,11 +27,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.ContentAlpha
 import androidx.compose.material.LocalContentAlpha
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.ProvideTextStyle
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
-import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
@@ -46,37 +44,11 @@ import dev.chrisbanes.accompanist.coil.CoilImage
 
 @Composable
 fun HomeView(dogs: List<Dog>, navigateToDetails: (Dog) -> Unit) {
-    Scaffold(
-//        topBar = { AppBar() }
-    ) {
+    Scaffold {
         Surface(color = MaterialTheme.colors.background) {
             DoggoList(dogs, navigateToDetails)
         }
     }
-}
-
-@Composable
-private fun AppBar() {
-    TopAppBar(
-        backgroundColor = MaterialTheme.colors.surface,
-        title = {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                ProvideTextStyle(value = MaterialTheme.typography.h6) {
-                    CompositionLocalProvider(
-                        LocalContentAlpha provides ContentAlpha.high,
-                        content = {
-                            Text(
-                                text = "Dog Adoption"
-                            )
-                        }
-                    )
-                }
-            }
-        }
-    )
 }
 
 @Composable

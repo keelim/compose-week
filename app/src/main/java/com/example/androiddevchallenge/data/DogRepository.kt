@@ -18,7 +18,7 @@ package com.example.androiddevchallenge.data
 import com.example.androiddevchallenge.data.model.Dog
 import com.example.androiddevchallenge.data.model.Image
 
-object DoggosRepository {
+object DogRepository {
     val dogList = listOf(
         Dog(
             "1",
